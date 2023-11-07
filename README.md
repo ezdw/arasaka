@@ -1,4 +1,5 @@
-![Uploading wp7743712-1440x2560-mobile-wallpapers.png…]()
+![wp7743712-1440x2560-mobile-wallpapers](https://github.com/ezdw/arasaka/assets/72717235/4bcb6f14-50b8-46dc-9dee-d13a037f8320)
+
 
 ### INSTALL SCRIPT
 
