@@ -30,9 +30,9 @@ clear;clear;clear
 
   # // Banner
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
-echo -e "  WELCOME TO ARASAKA VPN TUNNELING ${YELLOW}(${NC}${green} v1 Edition ${NC}${YELLOW})${NC}"
+echo -e "  WELCOME TO ARASAKA SERVER ${YELLOW}(${NC}${green} v1 Edition ${NC}${YELLOW})${NC}"
 echo -e " This Will Quick Setup VPN Server On Your Server(vps)"
-echo -e "  Auther : ${green}Arasaka vpn® ${NC}${YELLOW}(${NC} ${green} Arasaka vpn Tunneling ${NC}${YELLOW})${NC}"
+echo -e "  Auther : ${green}Arasaka Black Firewall ${NC}${YELLOW}(${NC} ${green} Arasaka vpn Tunneling ${NC}${YELLOW})${NC}"
 echo -e " © Code By ARASAKA COMPANY${YELLOW}(${NC} 11/7/2023 ${YELLOW})${NC}"
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
 echo ""
