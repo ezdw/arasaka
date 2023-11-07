@@ -1,6 +1,6 @@
 #!/bin/bash
-# Edition : Stable Edition V3.0
-# Auther  : Geo Project
+# Edition : V1.0
+# Auther  : Arasaka Company
 # (C) Copyright 2023
 # =========================================
 
