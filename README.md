@@ -1,3 +1,5 @@
+![Uploading wp7743712-1440x2560-mobile-wallpapers.png…]()
+
 ### INSTALL SCRIPT
 
 <pre><code>apt install -y && apt update -y && apt upgrade -y</code></pre>
