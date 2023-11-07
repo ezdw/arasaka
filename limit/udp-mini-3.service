@@ -1,6 +1,6 @@
 [Unit]
 Description=UDP 7300
-Documentation=https://geovpn.net
+Documentation=https://diamsw-stores.my.id
 After=syslog.target network-online.target
 
 [Service]
