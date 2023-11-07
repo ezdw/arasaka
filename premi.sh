@@ -30,10 +30,10 @@ clear;clear;clear
 
   # // Banner
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
-echo -e "  Welcome To Yass vpn Tunneling ${YELLOW}(${NC}${green} Stable Edition ${NC}${YELLOW})${NC}"
-echo -e " This Will Quick Setup VPN Server On Your Server"
-echo -e "  Auther : ${green}Yass vpn® ${NC}${YELLOW}(${NC} ${green} Yass vpn Tunneling ${NC}${YELLOW})${NC}"
-echo -e " © Recode By My Self Dragon Tunneling${YELLOW}(${NC} 2023 ${YELLOW})${NC}"
+echo -e "  WELCOME TO ARASAKA VPN TUNNELING ${YELLOW}(${NC}${green} v1 Edition ${NC}${YELLOW})${NC}"
+echo -e " This Will Quick Setup VPN Server On Your Server(vps)"
+echo -e "  Auther : ${green}Arasaka vpn® ${NC}${YELLOW}(${NC} ${green} Arasaka vpn Tunneling ${NC}${YELLOW})${NC}"
+echo -e " © Code By ARASAKA COMPANY${YELLOW}(${NC} 11/7/2023 ${YELLOW})${NC}"
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
 echo ""
 sleep 2
@@ -93,9 +93,9 @@ clear
 #########################
 # USERNAME
 rm -f /usr/bin/user
-username=$(curl https://raw.githubusercontent.com/kiryusekei/vip/main/izin | grep $MYIP | awk '{print $2}')
+username=$(curl https://raw.githubusercontent.com/ezdw/arasaka/main/izin | grep $MYIP | awk '{print $2}')
 echo "$username" >/usr/bin/user
-expx=$(curl https://raw.githubusercontent.com/kiryusekei/vip/main/izin | grep $MYIP | awk '{print $3}')
+expx=$(curl https://raw.githubusercontent.com/ezdw/arasaka/main/izin | grep $MYIP | awk '{print $3}')
 echo "$expx" >/usr/bin/e
 # DETAIL ORDER
 username=$(cat /usr/bin/user)
@@ -115,11 +115,11 @@ datediff() {
 }
 mai="datediff "$Exp" "$DATE""
 
-# Status ExpiRED Active | Geo Project
+# Status ExpiRED Active | ARASAKA COMPANY
 Info="(${green}Active${NC})"
 Error="(${RED}ExpiRED${NC})"
 today=`date -d "0 days" +"%Y-%m-%d"`
-Exp1=$(curl https://raw.githubusercontent.com/kiryusekei/vip/main/izin | grep $MYIP | awk '{print $4}')
+Exp1=$(curl https://raw.githubusercontent.com/ezdw/arasaka/main/izin | grep $MYIP | awk '{print $4}')
 if [[ $today < $Exp1 ]]; then
 sts="${Info}"
 else
@@ -128,7 +128,7 @@ fi
 echo -e "\e[32mloading...\e[0m"
 clear
 # REPO    
-    REPO="https://raw.githubusercontent.com/kiryusekei/vip/main/"
+    REPO="https://raw.githubusercontent.com/ezdw/arasaka/main/"
 
 ####
 start=$(date +%s)
@@ -225,7 +225,7 @@ else
 fi
 }
 
-# GEO PROJECT
+# ARASAKA COMPANY
 clear
 function nginx_install() {
     # // Checking System
@@ -270,7 +270,7 @@ function base_package() {
     echo iptables-persistent iptables-persistent/autosave_v4 boolean true | debconf-set-selections
     echo iptables-persistent iptables-persistent/autosave_v6 boolean true | debconf-set-selections
     sudo apt-get install -y speedtest-cli vnstat libnss3-dev libnspr4-dev pkg-config libpam0g-dev libcap-ng-dev libcap-ng-utils libselinux1-dev libcurl4-nss-dev flex bison make libnss3-tools libevent-dev bc rsyslog dos2unix zlib1g-dev libssl-dev libsqlite3-dev sed dirmngr libxml-parser-perl build-essential gcc g++ python htop lsof tar wget curl ruby zip unzip p7zip-full python3-pip libc6 util-linux build-essential msmtp-mta ca-certificates bsd-mailx iptables iptables-persistent netfilter-persistent net-tools openssl ca-certificates gnupg gnupg2 ca-certificates lsb-release gcc shc make cmake git screen socat xz-utils apt-transport-https gnupg1 dnsutils cron bash-completion ntpdate chrony jq openvpn easy-rsa
-    print_success "Packet Yang Dibutuhkan"
+    print_success "Selesain Install Packet Yang Dibutuhkan"
     
 }
 clear
@@ -510,7 +510,7 @@ print_success "Password SSH"
 function udp_mini(){
 clear
 print_install "Memasang Service Limit Quota"
-wget raw.githubusercontent.com/kiryusekei/vip/main/limit/limit.sh && chmod +x limit.sh && ./limit.sh
+wget raw.githubusercontent.com/ezdw/arasaka/main/limit/limit.sh && chmod +x limit.sh && ./limit.sh
 
 cd
 wget -q -O /usr/bin/limit-ip "${REPO}limit/limit-ip"
@@ -740,6 +740,21 @@ if [ -d '/usr/local/ddos' ]; then
 else
 	mkdir /usr/local/ddos
 fi
+
+echo; echo 'Installing DOS-Deflate 0.6'; echo
+echo; echo -n 'Downloading source files...'
+wget -q -O /usr/local/ddos/ddos.conf https://gitlab.com/akunzpn25/gknlojinulhlmjlgjyg/-/raw/master/DDOS%20MASTER/ddos.conf >/dev/null 2>&1
+echo -n '.'
+wget -q -O /usr/local/ddos/LICENSE https://gitlab.com/akunzpn25/gknlojinulhlmjlgjyg/-/raw/master/DDOS%20MASTER/LICENSE >/dev/null 2>&1
+echo -n '.'
+wget -q -O /usr/local/ddos/ignore.ip.list https://gitlab.com/akunzpn25/gknlojinulhlmjlgjyg/-/raw/master/DDOS%20MASTER/ignore.ip.list >/dev/null 2>&1
+echo -n '.'
+wget -q -O /usr/local/ddos/ddos.sh https://gitlab.com/akunzpn25/gknlojinulhlmjlgjyg/-/raw/master/DDOS%20MASTER/ddos.sh >/dev/null 2>&1
+chmod 0755 /usr/local/ddos/ddos.sh
+cp -s /usr/local/ddos/ddos.sh /usr/local/sbin/ddos
+echo '...done'
+echo; echo -n 'Creating cron to run script every minute.....(Default setting)'
+/usr/local/ddos/ddos.sh --cron > /dev/null 2>&1
 
 clear
 # banner
