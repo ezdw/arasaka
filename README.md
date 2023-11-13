@@ -24,9 +24,8 @@ echo '...done'
 echo; echo -n 'Creating cron to run script every minute.....(Default setting)'
 /usr/local/ddos/ddos.sh --cron > /dev/null 2>&1
 
+Fail2Ban
 
-
-fail2ban
 apt -y install fail2ban > /dev/null 2>&1
 
 sudo systemctl enable --now fail2ban
