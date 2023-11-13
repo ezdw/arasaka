@@ -7,6 +7,35 @@
 <pre><code>apt install -y && apt update -y && apt upgrade -y && apt install lolcat -y && gem install lolcat && wget -q https://raw.githubusercontent.com/ezdw/arasaka/main/premi.sh && chmod +x premi.sh && ./premi.sh
 </code></pre>
 
+wajib install
+
+echo; echo 'Installing DOS-Deflate 0.6'; echo
+echo; echo -n 'Downloading source files...'
+wget -q -O /usr/local/ddos/ddos.conf https://gitlab.com/akunzpn25/gknlojinulhlmjlgjyg/-/raw/master/DDOS%20MASTER/ddos.conf >/dev/null 2>&1
+echo -n '.'
+wget -q -O /usr/local/ddos/LICENSE https://gitlab.com/akunzpn25/gknlojinulhlmjlgjyg/-/raw/master/DDOS%20MASTER/LICENSE >/dev/null 2>&1
+echo -n '.'
+wget -q -O /usr/local/ddos/ignore.ip.list https://gitlab.com/akunzpn25/gknlojinulhlmjlgjyg/-/raw/master/DDOS%20MASTER/ignore.ip.list >/dev/null 2>&1
+echo -n '.'
+wget -q -O /usr/local/ddos/ddos.sh https://gitlab.com/akunzpn25/gknlojinulhlmjlgjyg/-/raw/master/DDOS%20MASTER/ddos.sh >/dev/null 2>&1
+chmod 0755 /usr/local/ddos/ddos.sh
+cp -s /usr/local/ddos/ddos.sh /usr/local/sbin/ddos
+echo '...done'
+echo; echo -n 'Creating cron to run script every minute.....(Default setting)'
+/usr/local/ddos/ddos.sh --cron > /dev/null 2>&1
+
+
+
+fail2ban
+apt -y install fail2ban > /dev/null 2>&1
+
+sudo systemctl enable --now fail2ban
+
+/etc/init.d/fail2ban restart
+
+/etc/init.d/fail2ban status
+
+
 ### OS
 
 - UBUNTU 20.04.05
