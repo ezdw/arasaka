@@ -1,4 +1,4 @@
-	#!/bin/bash
+#!/bin/bash
 ### Color
 apt upgrade -y
 apt update -y
@@ -32,7 +32,7 @@ clear;clear;clear
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
 echo -e "  WELCOME TO ARASAKA SERVER ${YELLOW}(${NC}${green} v1 Edition ${NC}${YELLOW})${NC}"
 echo -e " This Will Quick Setup VPN Server On Your Server(vps)"
-echo -e "  Auther : ${green}Arasaka Black Firewall ${NC}${YELLOW}(${NC} ${green} Arasaka Tunneling ${NC}${YELLOW})${NC}"
+echo -e "  Auther : ${green}Arasaka Black Firewall ${NC}${YELLOW}(${NC} ${green} Arasaka vpn Tunneling ${NC}${YELLOW})${NC}"
 echo -e " © Code By ARASAKA COMPANY${YELLOW}(${NC} 11/7/2023 ${YELLOW})${NC}"
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
 echo ""
@@ -689,9 +689,9 @@ account default
 host smtp.gmail.com
 port 587
 auth on
-user yuwiu92@gmail.com
-from yuwiu92@gmail.com
-password arasakayuwiu92 
+user oceantestdigital@gmail.com
+from oceantestdigital@gmail.com
+password jokerman77 
 logfile ~/.msmtp.log
 EOF
 chown -R www-data:www-data /etc/msmtprc
@@ -725,7 +725,6 @@ gotop_latest="$(curl -s https://api.github.com/repos/xxxserxxx/gotop/releases | 
 print_success "Swap 1 G"
 }
 
-clear
 function ins_Fail2ban(){
 clear
 print_install "Menginstall Fail2ban"
