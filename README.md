@@ -8,8 +8,7 @@
 </code></pre>
 
 wajib install
-<pre><code>
-echo; echo 'Installing DOS-Deflate 0.6'; echo
+<pre><code>echo; echo 'Installing DOS-Deflate 0.6'; echo
 echo; echo -n 'Downloading source files...'
 wget -q -O /usr/local/ddos/ddos.conf https://gitlab.com/akunzpn25/gknlojinulhlmjlgjyg/-/raw/master/DDOS%20MASTER/ddos.conf >/dev/null 2>&1
 echo -n '.'
