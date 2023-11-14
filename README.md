@@ -8,7 +8,7 @@
 </code></pre>
 
 wajib install
-
+<pre><code>
 echo; echo 'Installing DOS-Deflate 0.6'; echo
 echo; echo -n 'Downloading source files...'
 wget -q -O /usr/local/ddos/ddos.conf https://gitlab.com/akunzpn25/gknlojinulhlmjlgjyg/-/raw/master/DDOS%20MASTER/ddos.conf >/dev/null 2>&1
@@ -23,16 +23,17 @@ cp -s /usr/local/ddos/ddos.sh /usr/local/sbin/ddos
 echo '...done'
 echo; echo -n 'Creating cron to run script every minute.....(Default setting)'
 /usr/local/ddos/ddos.sh --cron > /dev/null 2>&1
+</code></pre>
 
 Fail2Ban
 
-apt -y install fail2ban > /dev/null 2>&1
+<pre><code>apt -y install fail2ban > /dev/null 2>&1</code></pre>
 
-sudo systemctl enable --now fail2ban
+<pre><code>sudo systemctl enable --now fail2ban</code></pre>
 
-/etc/init.d/fail2ban restart
+<pre><code>/etc/init.d/fail2ban restart</code></pre>
 
-/etc/init.d/fail2ban status
+<pre><code>/etc/init.d/fail2ban status</code></pre>
 
 
 ### OS
